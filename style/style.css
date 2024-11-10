@@ -1,0 +1,20 @@
+@charset "utf-8";
+body{font-size:15px;margin:0px;text-align: center;background-color:#FFF;}
+#container{width:100%}
+
+#header{
+	width:100%;
+	margin:0 auto;
+	height:50px;
+	background-color: aquamarine;
+	line-height:50px;
+}
+
+#nav{
+	width:100%;
+	margin:0;
+	height: 60px;
+	background-color:antiquewhite;
+	line-height: 60px;
+	color: white;
+}

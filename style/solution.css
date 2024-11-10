@@ -1,0 +1,264 @@
+﻿
+.bg-video{
+    position:relative;
+}
+
+video {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    object-fit:cover;
+}
+.bg-video h1{
+    position:absolute;
+    color:white;
+    top:250px;
+    left:7%;
+    font-size:64px;
+    font-weight:bold;
+}
+
+
+.a1{
+    position: absolute;
+    color: white;
+    top: 500px;
+    left: 7%;
+    font-size: 20px;  
+}
+.a2{
+    position: absolute;
+    color: white;
+    top: 550px;
+    left: 7%;
+    font-size: 20px;  
+}
+
+#buttons {
+    position: absolute;
+    color: white;
+    top: 640px;
+    left: 7%;
+    font-size: 20px;
+
+}
+
+    #buttons a {
+        box-shadow: 0 0 1rem 0.2rem rgb(102 136 226 / 0.4);
+        color: white;
+        width: 100px;
+        height: 100px;
+        background: #6e7df8;
+        margin-right: 15px;
+        padding: 14px;
+        border-radius: 0.3rem;
+    }
+
+.music {
+	position: relative;
+    background-image:url("../image/ACE_Studio1.png");
+    background-size:cover;
+    display:grid;
+    place-content:center;
+
+}
+
+.mbg {
+	position:absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	filter: blur(10px);
+
+}
+
+.mbg img{
+	width: 100%;
+	
+}
+
+.music h2{
+    color:skyblue;
+    margin:50px auto;
+	z-index: 1;
+}
+h4{
+	color:skyblue;
+
+}
+
+
+.lbt{
+	position: relative;
+}
+
+    .music h3 {
+        color: #6e7df8;
+
+    }
+
+.shell ul{
+    list-style:none;
+}
+
+/*轮播图开始*/
+.lbt{
+    position:relative;
+    width:100%;
+    height:100%;
+	box-shadow: 0 0 1rem 0.2rem rgb(102 136 226 / 0.4);
+	z-index: 999;
+}
+
+.shell {
+    width: 477px;
+    height: 715px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+
+}
+
+.images {
+    width: 300%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: 0.2s;
+}
+
+.img {
+    width: 100%;
+    background-size: contain;
+	position: relative;
+}
+
+
+    .img:nth-child(1) {
+        background-image:url("../image/lty.png");
+    }
+
+    .img:nth-child(2) {
+        background-image: url("../image/xy.png");
+    }
+
+    .img:nth-child(3) {
+        background-image: url("../image/tll.png");
+    }
+
+
+.min-images {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    right: 10%;
+}
+
+.min {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px rgba(255,255,255,0.4);
+    /*照片偏移量    border:solid 5px rgba(255,255,255,0.5);*/
+    background-position: -20px 0;
+    box-shadow: 0 0 1rem 0.2rem rgb(102 136 226 / 0.4);
+}
+
+    .min:nth-child(1) {
+        
+    }
+
+    .min:nth-child(2) {
+        
+    }
+
+    .min:nth-child(3) {
+        
+    }
+
+
+.button {
+    height: 100%;    
+    position: absolute;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    user-select: none;
+    top:0;
+    right:100%;
+	width: 40%;
+}
+
+.detailname{
+	display: none;
+}
+
+.button-left, .button-right {
+    font-size: 3rem;
+    padding: 0 20px;
+    line-height: 300px;
+    cursor: pointer;
+    color: rgb(102 136 226 / 0.9);
+	
+}
+
+
+
+.detailjj{
+	display: none;
+}
+
+.jianjie{
+	position: absolute;
+	left: 115%;
+	bottom:15%;
+	width: 80%;
+	color:skyblue;
+	box-shadow: 0 0 1rem 0.2rem rgb(102 136 226 / 0.4);
+}
+
+.jianjie article{
+		text-align: left;
+	letter-spacing: 3px;
+	margin: 20px;
+}
+/*轮播图结束*/
+
+
+.paint{
+
+	background-size: cover;
+	height: 800px;
+	position: relative;
+	background: url("../image/novalai.png");
+	background-size: cover;
+}
+
+
+
+.paint a{
+	padding: 30px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: bold;
+	color: aqua;
+	font-size: 50px;
+	box-shadow:  0 0 1rem 0.2rem rgb(0 0 0 / 0.6);
+}
+
+fotter{
+    color:white;
+}
+

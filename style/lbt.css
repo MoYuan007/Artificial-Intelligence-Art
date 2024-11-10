@@ -1,0 +1,98 @@
+﻿/*轮播图开始*/
+.shell {
+    width: 100%;
+    height: 760px;
+    position: relative;
+    overflow-x: hidden;
+    border-radius: 5px;
+    box-shadow: 20px 30px 20px rgba(0,0,0,.5);
+}
+
+.images {
+    width: 400%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: 0.2s;
+}
+
+.img {
+    width: 100%;
+    background-size: cover;
+}
+
+    .img:nth-child(1) {
+        background-image: url("../image/ACE_Studio.png");
+    }
+
+    .img:nth-child(2) {
+        background-image: url("../image/AIpaint1.png");
+    }
+
+    .img:nth-child(3) {
+        background-image: url("../image/ACE_Studio1.png");
+    }
+
+    .img:nth-child(4) {
+        background:url("../image/yunyekongBG.png")no-repeat;
+        background-size: cover;
+    }
+
+.min-images {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    right: 10%;
+}
+
+.min {
+    width: 40px;
+    height: 10px;
+    cursor: pointer;
+    background-size: cover;
+    border-radius: 2px;
+    border: solid 1px rgba(255,255,255,0.4);
+    /*照片偏移量    border:solid 5px rgba(255,255,255,0.5);*/
+    background-position: -20px 0;
+    box-shadow: 0 0 1rem 0.2rem rgb(102 136 226 / 0.4);
+}
+
+    .min:nth-child(1) {
+        background: url("../image/lolsky1.png") no-repeat;
+    }
+
+    .min:nth-child(2) {
+        background: url("../image/lolsky3.png") no-repeat;
+    }
+
+    .min:nth-child(3) {
+        background: url("../image/lolsky2.png") no-repeat;
+    }
+
+    .min:nth-child(4) {
+        background: url("../image/AIpaint3.png") no-repeat;
+    }
+
+.button {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.button-left, .button-right {
+    font-size: 1.4rem;
+    padding: 0 20px;
+    line-height: 760px;
+    cursor: pointer;
+    color: rgb(102 136 226 / 0.9);
+}
+/*轮播图结束*/

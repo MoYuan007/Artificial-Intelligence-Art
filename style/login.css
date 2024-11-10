@@ -1,0 +1,161 @@
+﻿*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html {
+    font-size: 10px;
+    background: url(../image/BG.png) no-repeat;
+    background-size:cover;
+}
+
+.logo img{
+    position:absolute;
+    top:0;
+    left:4rem;
+    width:30rem;
+}
+
+.title h1{
+    position:absolute;
+    top:4rem;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:4rem;
+    color:aquamarine;
+}
+
+html::before{
+    content: ' ';
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:-1;
+    backdrop-filter:blur(1rem);
+}
+
+::selection{
+    color:#fff;
+    background-color:skyblue;
+}
+
+.box {
+    display: flex;
+    width: 90rem;
+    height: 55rem;
+    background-color: rgba(255,255,255,17%);
+    border-radius: 1.5rem;
+    margin: 10% auto;
+    box-shadow: 0 0 1rem 0.2rem rgb(0 0 0 / 10%);
+    /*    backdrop-filter:blur(20px);
+*/
+}
+
+    .box .left {
+        position: relative;
+        width: 40%;
+        height: 100%;
+        background-color: skyblue;
+        border-radius: 1.5rem;
+    }
+
+        .box .left::before {
+            content: ' ';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(../image/login-girl.png);
+            background-size: cover;
+            opacity: 80%;
+            border-radius: 1.5rem;
+        }
+
+    .box .right{
+        display:flex;
+        width:60%;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .box .right h4{
+        color:#b7e5ff;
+        font-size:3rem;
+        margin-top:5rem;
+    }
+
+    .box .right form{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+        .box .right form .acc {
+            outline: none;
+            width: 80%;
+            height: 5rem;
+            font-size: 1.6rem;
+            margin-top: 5rem;
+            padding: 1rem 0 0 1.6rem;
+            border: none;
+            border-bottom: 1px solid #3484e6;
+            color: #b7e5ff;
+            background-color: rgba(0,0,0,0);
+        }
+
+    .box form .acc:focus {
+        outline: none;
+        color:white;
+        padding: 1rem 0 0 1.6rem;
+    }
+
+.right .submit {
+
+    text-decoration:none;
+    text-align:center;
+    line-height:5rem;
+    width: 60%;
+    height: 5rem;
+    color: white;
+    background: rgb(92 221 255 / 0.9);
+    font-size: 1.9rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 6rem 0 0 50%;
+    transform: translateX(-50%);
+}
+
+    .right .submit:hover {
+        box-shadow: 0 0 2rem -0.5rem rgb(0 0 0 / 0.6);
+    }
+
+    .right .fn{
+        display:flex;
+        justify-content:space-between;
+        margin-top:1rem;
+        width:70%;
+    }
+
+        .right .fn a {
+            font-size: 1.3rem;
+            margin-top: 5rem;
+            padding: 1rem 2rem;
+            color: #b7e5ff;
+            text-decoration: none;
+        }
+
+    .right .fn a:hover{
+        color:aqua;
+    }
+
+/*版权信息开始*/
+
+.copyright-footer {
+    background-color: ActiveBorder;
+    color: white;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/*版权信息结束*/
