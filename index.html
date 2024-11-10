@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>AIA人工智能艺术</title>
+	<link rel="icon" href="image/AIAiconBG.png">
+	<link rel="stylesheet" href="Style/index.css">
+	<link rel="stylesheet" href="Style/lbt.css">
+</head>
+
+<body>
+	<div class="container">
+		<!头部导航开始>
+		<div class="header-nav">
+			<div class="header">
+				<div class="header-left">
+					<img class="logo" src="image/AIAlogo1.png" />
+				</div>
+
+				<div class="search">
+					<input type="text" class="searchInput" name="selfsearch" placeholder="搜索AI" />
+					<a class="searchBtn" href="https://cn.bing.com/search?q=AI绘画&form=QBLH&sp=-1&pq=ai&sc=10-2&qs=n&sk=&cvid=831D22DCDD594DC5BF6EF2C57C1E6EB7&ghsh=0&ghacc=0&ghpl=">
+						<img src="image/search-icon-black.png" width="20" ; height="20" />
+					</a>
+				</div>
+
+
+				<div class="header-right">
+					<div class="header-right-icons">
+						<a href="aialogin.html">
+							<img src="image/user.png" />
+						</a>
+						<img src="image/audioplay.png" id="audio-icon" />
+					</div>
+
+					<audio id="bgm" autoplay loop>
+						<source src="audio/hello-ace.mp3" type="audio/mp3" />
+					</audio>
+					<script>
+						var bgm = document.getElementById("bgm");
+						var icon = document.getElementById("audio-icon");
+
+						icon.onclick = function () {
+							if (bgm.paused) {
+								bgm.play();
+							} else {
+								bgm.pause();
+							}
+						}
+					</script>
+
+				</div>
+				<!导航开始>
+				<div class="nav">
+					<div class="wrap">
+						<ul>
+							<li ><a class="active" href="index.html">官网首页</a></li>
+							<li>
+								<a href="#">产品列表</a>
+								<div class="nav-list">
+									<a href="https://www.taptap.cn/app/189147/topic?type=feed">虚拟歌姬</a>
+									<br />
+									<a href="https://novelai.net/">梦境生成</a>
+									<br />
+									<a href="#download">AIA引擎</a>
+								</div>
+							</li>
+							<li>
+								<a href="solution.html">解决方案</a>
+								<div class="nav-list">
+									<a href="solution.html#music">音乐</a>
+									<br />
+									<a href="solution.html#paint">绘画</a>
+								</div>
+							</li>
+							<li><a href="https://search.bilibili.com/all?keyword=AI%E7%BB%98%E7%94%BB&from_source=webtop_search&spm_id_from=333.1007&search_source=5">新闻资讯</a></li>
+							<li><a href="https://www.zhihu.com/search?type=content&q=AI%E9%9F%B3%E4%B9%90AI%E7%BB%98%E7%94%BB">了解更多</a></li>
+							<li>
+								<a href="#about-us">关于我们</a>
+								<div class="nav-list">
+									<a href="https://space.bilibili.com/66893354?spm_id_from=333.788.0.0">关注b站</a>
+									<br />
+									<a href="https://weibo.com/u/6105527241">关注微博</a>
+								</div>
+							</li>
+							<li>
+								<a href="#download">下载引擎</a>
+								<div class="nav-list">
+									<a href="#download">Windows</a>
+									<br />
+									<a href="#download">Mac</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="nav-list">
+					</div>
+				</div>
+				<!导航结束>
+			</div>
+		</div>
+		<!头部导航结束>
+
+		<div class="no-nav">
+			<div class="shell">
+				<ul class="images">
+					<li class="img"></li>
+					<li class="img"></li>
+					<li class="img"></li>
+					<li class="img"></li>
+				</ul>
+				<ul class="min-images">
+					<li class="min"></li>
+					<li class="min"></li>
+					<li class="min"></li>
+					<li class="min"></li>
+				</ul>
+				<div class="button">
+					<div class="button-left"><</div>
+					<div class="button-right">></div>
+				</div>
+
+			</div>
+
+			<div class="body-bottom">
+				<div class="body-bottom-bg">  </div>
+				<section class="download" id="download">
+					<h1>AIA引擎助力您的艺术创作，为您提供源源不断的灵感</h1>
+					<div class="download-icons">
+						<a class="download-icon" href="https://as-api-ws-cdn-1.huoyaojing.com/web/app/ACE_Studio_1.2.2.exe">
+							<img src="image/windows-icon.svg" alt="Windows下载">
+							<b>Windows下载</b>
+							<span class="versions">版本 V2.1.8</span>
+						</a>
+						<a class="download-icon" href="https://as-api-ws-cdn-1.huoyaojing.com/web/app/ACE_Studio_1.2.2.exe">
+							<img src="image/mac-icon.svg" alt="Mac下载">
+							<b>Mac下载</b>
+							<span class="versions">版本 V2.1.8</span>
+						</a>
+					</div>
+				</section>
+
+				<section class="about-us" id="about-us">
+					<a href="https://space.bilibili.com/66893354?spm_id_from=333.788.0.0">
+						<h1>关注我们</h1>
+					</a>
+					<div class="QRCodes">
+						<img src="image/bilibiliQRCode.png" />
+					</div>
+				</section>
+			</div>
+			<footer class="copyright-footer"> Copyright © 20201111109孙光军/墨渊/风之传说007 </footer>
+		</div>
+	</div>
+</body>
+
+</html>
+<script>
+    let left = document.querySelector(".button-left")
+    let right = document.querySelector(".button-right")
+    let min = document.querySelectorAll(".min")
+    let images = document.querySelector(".images")
+    // index用来计算和控制图片的位置，再设置一个time作为定时器
+    let index = 0
+    let time
+    // 结合index来定义当前图片的位置的
+    function position() {
+        images.style.left = (index * -100) + "%"
+    }
+    
+    function add() {
+        if (index >= min.length - 1) {
+            index = 0
+        } else {
+            index++
+        }
+    }
+    function desc() {
+        if (index < 1) {
+            index = min.length - 1
+        } else {
+            index--
+        }
+    }
+    //每隔6秒钟index就加一，然后加入增加add函数和desc函数来判断一下，再加入定位函数
+    function timer() {
+        time = setInterval(() => {
+            index++
+            desc()
+            add()
+            position()
+        }, 6000)
+    }
+    
+    
+    left.addEventListener("click", () => {
+        desc()
+        position()
+        clearInterval(time)
+        timer()
+    })
+
+    right.addEventListener("click", () => {
+        add()
+        position()
+        clearInterval(time)
+        timer()
+    })
+    // 在弄好左右两个按钮的时候，我们还需要生效下面的小图片按钮，
+    // 首先我们先遍历一遍，然后获取当前点击的那个小图片按钮的值并赋值给index，这样子就可以随之跳转
+    for (let i = 0; i < min.length; i++) {
+        min[i].addEventListener("click", () => {
+            index = i
+            position()
+            clearInterval(time)
+            timer()
+        })
+    }
+	//开启定时器
+	timer()
+</script>

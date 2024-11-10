@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>先进的人工智能艺术解决方案</title>
+    <link rel="icon" href="image/AIAiconBG.png">
+    <link rel="stylesheet" href="Style/index.css">
+    <link rel="stylesheet" href="Style/solution.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!头部导航开始>
+        <div class="header-nav">
+            <div class="header">
+                <div class="header-left">
+                    <img class="logo" src="image/AIAlogo1.png" />
+                </div>
+
+                <div class="search">
+                    <input type="text" class="searchInput" name="selfsearch" placeholder="搜索AI" />
+                    <a class="searchBtn" href="https://cn.bing.com/search?q=AI绘画&form=QBLH&sp=-1&pq=ai&sc=10-2&qs=n&sk=&cvid=831D22DCDD594DC5BF6EF2C57C1E6EB7&ghsh=0&ghacc=0&ghpl=">
+                        <img src="image/search-icon-black.png" width="20" ; height="20" />
+                    </a>
+                </div>
+
+
+                <div class="header-right">
+                    <div class="header-right-icons">
+                        <a href="aialogin.html">
+                            <img src="image/user.png" />
+                        </a>
+                        <img src="image/audioplay.png" id="audio-icon" />
+                    </div>
+
+
+                </div>
+                <!导航开始>
+                <div class="nav">
+                    <div class="wrap">
+                        <ul>
+                            <li ><a href="index.html">官网首页</a></li>
+                            <li>
+                                <a href="#">产品列表</a>
+                                <div class="nav-list">
+                                    <a href="https://www.taptap.cn/app/189147/topic?type=feed">虚拟歌姬</a>
+                                    <br />
+                                    <a href="https://novelai.net/">梦境生成</a>
+                                    <br />
+                                    <a href="index.html#download">AIA引擎</a>
+                                </div>
+                            </li>
+                            <li >
+                                <a  class="active" href="solution.html">解决方案</a>
+                                <div class="nav-list">
+                                    <a href="#music">音乐</a>
+                                    <br />
+                                    <a href="#paint">绘画</a>
+                                </div>
+                            </li>
+                            <li><a href="https://search.bilibili.com/all?keyword=AI%E7%BB%98%E7%94%BB&from_source=webtop_search&spm_id_from=333.1007&search_source=5">新闻资讯</a></li>
+                            <li><a href="https://www.zhihu.com/search?type=content&q=AI%E9%9F%B3%E4%B9%90AI%E7%BB%98%E7%94%BB">了解更多</a></li>
+                            <li>
+                                <a href="index.html#about-us">关于我们</a>
+                                <div class="nav-list">
+                                    <a href="https://space.bilibili.com/66893354?spm_id_from=333.788.0.0">关注b站</a>
+                                    <br />
+                                    <a href="https://weibo.com/u/6105527241">关注微博</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="index.html#download">下载引擎</a>
+                                <div class="nav-list">
+                                    <a href="index.html#download">Windows</a>
+                                    <br />
+                                    <a href="index.html#download">Mac</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-list">
+                    </div>
+                </div>
+                <!导航结束>
+            </div>
+        </div>
+        <!头部导航结束>
+
+        <div class="no-nav">
+            <div class="bg-video">
+                <video id="bgv" autoplay muted loop src="video/aisinger.mp4">            </video>
+                <script>
+                    var bgv = document.getElementById("bgv");
+                    var icon = document.getElementById("audio-icon");
+                    icon.onclick = function () {
+                        if (bgv.muted) {
+                            bgv.muted = false;
+                        } else {
+                            bgv.muted = true;
+                        }
+                    }
+                </script>
+                <h1>
+                    探索无限的艺术
+                </h1>
+                <article class="a1">
+                    通过强大的AI开发平台，创造出精彩的音乐、绘画。
+                </article>
+                <article class="a2">
+                    AIA 让您能够快速创作艺术，迸发无穷的灵感。
+                </article>
+                <div id="buttons">
+                    <a href="index.html#about-us" id="a1">联系我们</a>
+                    <a href="index.html#download" id="a2">下载引擎</a>
+                </div>
+            </div>
+
+            <div id="music" class="music">
+				<div class="mbg">
+					<img src="image/ACE_Studio1.png" alt=""/>
+				</div>
+				
+                <h2>
+                    虚拟歌姬，唱响未来
+                </h2>
+                <div class="lbt">
+
+                    <div class="shell">
+                        <ul class="images">
+                            <li class="img"><h3>洛天依·AI</h3>
+													<audio class="yy" controls>	<source src="audio/lty-xglkzjb.mp3" type="audio/mp3">  您的浏览器不支持该音频格式。						</audio>
+							</li>
+                            <li class="img"><h3>ACE·小夜</h3>
+													<audio class="yy" controls>	<source src="audio/xy-ylq.mp3" type="audio/mp3">  您的浏览器不支持该音频格式。						</audio>
+
+							</li>
+                            <li class="img"><h3>ACE·塔拉拉</h3>
+													<audio class="yy" controls>	<source src="audio/tll-tlldqmmx.mp3" type="audio/mp3">  您的浏览器不支持该音频格式。						</audio>
+							</li>
+                        </ul>
+                        <ul class="min-images">
+                            <li class="min"></li>
+                            <li class="min"></li>
+                            <li class="min"></li>
+                        </ul>
+						<div class="detailjj">简介<br/>能够敏锐地感受到他人感情，有点内向的少女。对过去曾经在人类世界创造了历史的传说中的VOCALOID™前辈们非常憧憬，也梦想着自己有朝一日能够成为歌声为别人传递感动与幸福的歌姬，这样的她在某日突然获得了召唤，并且带着某个重要的任务，作为新的VOCALOID™来到了人类的世界。能够为了别人而流泪的温柔，以无论经历多少挫折也绝不放弃的坚强。因为初到人类世界，完全不懂人类的语言，所以平常不能与人对话，只能通过歌唱来表达自己的感情和心中的旋律.
+						</div>
+						<div class="detailjj">简介<br/>小夜是一个校园引导机器人，经常收集学生们遗弃的可爱物品，她希望这些藏品可以帮助她成为一个真正的人类少女。可是不需要吃饭睡觉和娱乐的她，始终无法融入人类的生活。直到她发现，在唱歌的时候，她与人类有了真正的共鸣。于是小夜爱上了唱歌。
+						</div>
+						<div class="detailjj">简介<br/>嗒啦啦(Tarara)是游戏社区TapTap的拟人化萌娘。
+TapTap在2周年时推出的看板娘角色，画师为Anmi。<br/>万事屋
+Tarara的正经工作之一“有事儿您说话～接活儿看心情(◐‿◑)”
+公告
+每月中旬限定“开门”一天，接受客人委托。
+每月在所有委托中随机选定一份委托，协助客人达成心愿。
+可能因睡过头、肝太痛、饿了…等不可抗力原因，暂停营业一个月。（放鸽子的话会有通知哦~咕咕）
+承接的委托会在一个月内为客人实现心愿并公示委托完成情况哦~
+万事屋所有解释权、委托选择权、放鸽权、耍赖权归Tarara所有。</div>
+						
+
+						
+						<div class="detailname">下个路口再见吧</div>
+						<div class="detailname">摇篮曲</div>
+						<div class="detailname">塔拉拉的奇妙冒险</div>
+						
+						
+                    </div>
+                    <div class="button">
+                        <div class="button-left"><</div>
+							<h3 id="name">下个路口再见吧</h3>
+							<h4>听她唱歌</h4>
+                        <div class="button-right">></div>
+                    </div>
+					<div class="jianjie">
+						<article id="jj">简介<br/>能够敏锐地感受到他人感情，有点内向的少女。对过去曾经在人类世界创造了历史的传说中的VOCALOID™前辈们非常憧憬，也梦想着自己有朝一日能够成为歌声为别人传递感动与幸福的歌姬，这样的她在某日突然获得了召唤，并且带着某个重要的任务，作为新的VOCALOID™来到了人类的世界。能够为了别人而流泪的温柔，以无论经历多少挫折也绝不放弃的坚强。因为初到人类世界，完全不懂人类的语言，所以平常不能与人对话，只能通过歌唱来表达自己的感情和心中的旋律.
+						</article>
+					</div>
+						
+                </div>
+
+            </div>
+
+            <div  id = "paint" class="paint">
+				<a href="https://novelai.net/">强大的AI绘画，激发您的灵感</a>  
+				              
+            </div>
+
+            <footer  class="copyright-footer"> Copyright © 20201111109孙光军/墨渊/风之传说007 </footer>
+        </div>
+        </div>
+</body>
+</html>
+<script>
+	let jianjie=document.getElementById("jj")
+	let music_name=document.getElementById("name")
+	let player=document.getElementById("player")
+	
+    let jjs = document.querySelectorAll(".detailjj")
+	let music_names=document.querySelectorAll(".detailname")
+	let ms=document.querySelectorAll(".yy")
+	
+    let left = document.querySelector(".button-left")
+    let right = document.querySelector(".button-right")
+    let min = document.querySelectorAll(".min")
+    let images = document.querySelector(".images")
+    // index用来计算和控制图片的位置，再设置一个time作为定时器
+    let index = 0
+    let time
+    // 结合index来定义当前图片的位置的
+    function position() {
+        images.style.left = (index * -100) + "%"
+		jianjie.innerHTML=jjs[index].innerHTML
+		music_name.innerHTML=music_names[index].innerHTML
+    }
+
+    function add() {
+        if (index >= min.length - 1) {
+            index = 0
+        } else {
+            index++
+        }
+    }
+    function desc() {
+        if (index < 1) {
+            index = min.length - 1
+        } else {
+            index--
+        }
+    }
+
+    left.addEventListener("click", () => {
+        desc()
+        position()
+    })
+
+    right.addEventListener("click", () => {
+        add()
+        position()
+    })
+    // 在弄好左右两个按钮的时候，我们还需要生效下面的小图片按钮，
+    // 首先我们先遍历一遍，然后获取当前点击的那个小图片按钮的值并赋值给index，这样子就可以随之跳转
+    for (let i = 0; i < min.length; i++) {
+        min[i].addEventListener("click", () => {
+            index = i
+            position()
+        })
+    }
+</script>
